@@ -1,10 +1,9 @@
 [project]
-name = "make-filename"
+name = "makefilename"
 version = "0.1.0"
 description = "Takes an input string + extension and turns it into a sanitized filename"
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = []
 authors = [
     {name = "Robert Dusk", email = "robert@dusk.monster"}
 ]
@@ -34,4 +33,11 @@ classifiers = [
 [project.urls]
 homepage = "https://github.com/RobertDusk/py-make-filename"
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
