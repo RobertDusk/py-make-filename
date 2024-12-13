@@ -1,7 +1,7 @@
 name: Example
 
 jobs:
-  uv-example:
+  uv:
     name: python
     runs-on: ubuntu-latest
 
