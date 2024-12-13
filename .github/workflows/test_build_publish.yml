@@ -1,5 +1,10 @@
 name: Example
 
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   uv:
     name: python
@@ -19,7 +24,7 @@ jobs:
 
       - name: Run tests
         run: uv run pytest tests
-      
+
       - name: Build
         run: uv build
 
