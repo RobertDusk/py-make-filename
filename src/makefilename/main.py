@@ -25,6 +25,9 @@ def make_filename(
     if len(name) > 0 and name[-1] == "_":
         name = name[:-1]
 
+    if len(extension) > 0 and extension[0] != ".":
+        extension = "." + extension
+
     name = name + extension
 
     return name
